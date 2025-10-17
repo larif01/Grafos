@@ -282,15 +282,20 @@ if __name__ == "__main__":
         "grafo_direcionado_Ponderado_Direcionado.txt",
         "grafo_grande_completo.txt",
         "grafo_ponderado_Ponderado_NDirecionado.txt",
-        "grafo_simples_NPonderadoNDirecionado.txt"
+        "grafo_simples_NPonderadoNDirecionado.txt",
+        "slides.txt",
+        "slides_modificado.txt"
     ]
     for nome in arquivos_teste:
         testar_coloracao(nome)
+
     print("\n--- Árvore Geradora Mínima ---\n")
     gnames = [
         "grafo_ponderado_Ponderado_NDirecionado.txt",
         "grafo_direcionado_Ponderado_Direcionado.txt",
-        "grafo_simples_NPonderadoNDirecionado.txt"
+        "grafo_simples_NPonderadoNDirecionado.txt",
+        "slides.txt",
+        "slides_modificado.txt"
     ]
     for fname in gnames:
         g = ler_arquivo(fname, representacao="lista")
